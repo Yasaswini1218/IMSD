@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Data using Loops</title>
+</head>
+<body>
+    <h2>Display Data using for-in, for-of & forEach</h2>
+    <script>
+
+             let student = {name: "Ravi", age: 20, course: "BCA"};
+
+        document.write("Using for-in loop:<br>");
+        for (let key in student) {
+            document.write(key + " : " + student[key] + "<br>");
+        }
+
+     
+        let subjects = ["HTML", "CSS", "JavaScript"];
+
+        document.write("<br>Using for-of loop:<br>");
+        for (let sub of subjects) {
+            document.write(sub + "<br>");
+        }
+
+        document.write("<br><b>Using forEach loop:</b><br>");
+        subjects.forEach(function(sub) {
+            document.write(sub + "<br>");
+        });
+    </script>
+</body>
+</html>
