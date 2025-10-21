@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Object Properties and Methods</title>
+</head>
+<body>
+    <h1>JavaScript Array Example</h1>
+    <hr>
+
+    <script>
+        
+        let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+        document.write("Original Array: " + fruits.join(", ") + "<br><br>");
+
+        
+        document.write("<b>Array Length:</b> " + fruits.length + "<br><br>");
+
+        
+        fruits.push("Grapes");
+        document.write("<b>After push('Grapes'):</b> " + fruits.join(", ") + "<br><br>");
+
+  
+        fruits.pop();
+        document.write("<b>After pop():</b> " + fruits.join(", ") + "<br><br>");
+
+        
+        fruits.sort();
+        document.write("<b>After sort():</b> " + fruits.join(", ") + "<br><br>");
+
+        
+        fruits.reverse();
+        document.write("<b>After reverse():</b> " + fruits.join(", ") + "<br><br>");
+
+       
+    </script>
+
+</body>
+</html>
