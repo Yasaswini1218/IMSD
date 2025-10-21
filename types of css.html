@@ -1,0 +1,42 @@
+<!DOCTYPE html>  //styletypes.html
+<html>
+<head>
+    <title>Types of CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Selector: h2 | Property: color | Value: blue */
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* Selector: p | Property: font-size | Value: 18px */
+        p {
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="external.css">
+</head>
+
+<body style="background-color: lightyellow;"> <!-- Inline CSS -->
+    <h1 style="color: red; text-align: center;">Inline, Internal & External CSS</h1>
+
+    <h2>This heading uses Internal CSS</h2>
+
+    <p>This paragraph is styled using Internal CSS.</p>
+
+    <div class="external">This text uses External CSS.</div>
+</body>
+</html>
+
+/* Selector: .external | Property: color | Value: purple */    //external.css
+.external {
+    color: purple;
+    font-weight: bold;
+    text-align: center;
+}
+

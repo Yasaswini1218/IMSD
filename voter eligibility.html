@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Eligibility</title>
+</head>
+<body>
+    <h2>Voter Eligibility Check</h2>
+    <script>
+        // Taking input using prompt
+        let name = prompt("Enter your name:");
+        let age = parseInt(prompt("Enter your age:"));
+
+        // Checking eligibility
+        let result;
+        if (age >= 18)
+            result = "Eligible to Vote";
+        else
+            result = "Not Eligible to Vote";
+
+        // Displaying output in table format
+        document.write("<table border='1' cellpadding='8'>");
+        document.write("<tr><th>Name</th><th>Age</th><th>Status</th></tr>");
+        document.write("<tr><td>" + name + "</td><td>" + age + "</td><td>" + result + "</td></tr>");
+        document.write("</table>");
+    </script>
+</body>
+</html>
