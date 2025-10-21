@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial and Fibonacci</title>
+</head>
+<body>
+    <h2>Factorial and Fibonacci Calculator</h2>
+
+    <label>Enter a number: </label>
+    <input type="number" id="num">
+    <br><br>
+
+    <button onclick="findFactorial()">Factorial</button>
+    <button onclick="findFibonacci()">Fibonacci</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        // Function to calculate factorial
+        function findFactorial() {
+            let n = parseInt(document.getElementById("num").value);
+            let fact = 1;
+            for (let i = 1; i <= n; i++) {
+                fact *= i;
+            }
+            document.getElementById("result").innerHTML = "Factorial of " + n + " = " + fact;
+        }
+
+        // Function to generate Fibonacci series
+        function findFibonacci() {
+            let n = parseInt(document.getElementById("num").value);
+            let a = 0, b = 1, fib = "0";
+            for (let i = 1; i < n; i++) {
+                fib += ", " + b;
+                let next = a + b;
+                a = b;
+                b = next;
+            }
+            document.getElementById("result").innerHTML = "Fibonacci Series (" + n + " terms): " + fib;
+        }
+    </script>
+</body>
+</html>
